@@ -520,26 +520,26 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* 6. High-Tech & Téléphonie */}
+            {/* 6. Informatique & Téléphonie */}
             <div className="group relative bg-slate-50 rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
               <div className="relative h-56 overflow-hidden">
                 <img
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=800&q=80"
-                  alt="Smartphones & Accessoires"
+                  src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=800&q=80"
+                  alt="PC Portables & Informatique"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
                 <span className="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur-md rounded-full text-xs font-bold text-slate-900 uppercase">
-                  Shenzhen Hub
+                  Dubaï • Shenzhen
                 </span>
               </div>
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
                   <h3 className="text-lg font-bold text-slate-900 group-hover:text-red-600 transition-colors">
-                    Smartphones &amp; Accessoires TWS
+                    PC Portables &amp; Informatique
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
-                    Téléphones Android neufs sous blister scellé, écouteurs sans fil, chargeurs rapides et PC portables bureautique.
+                    Ordinateurs portables 15.6&quot; Core i5 pour bureaux et étudiants, smartphones Android 5G scellés d&apos;usine et matériel bureautique.
                   </p>
                 </div>
                 <div className="pt-4 mt-2 border-t border-slate-200/60">
