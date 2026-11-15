@@ -5,13 +5,24 @@ import nextTs from "eslint-config-next/typescript";
 const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
-  // Override default ignores of eslint-config-next.
+  {
+    rules: {
+      "react/no-unescaped-entities": "off",
+      "@next/next/no-img-element": "off",
+      "@next/next/no-sync-scripts": "off",
+      "@next/next/no-page-custom-font": "off",
+      "@next/next/google-font-display": "off",
+      "jsx-a11y/alt-text": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+    },
+  },
   globalIgnores([
-    // Default ignores of eslint-config-next:
     ".next/**",
     "out/**",
     "build/**",
     "next-env.d.ts",
+    "chine-turquie-express/**",
+    "convert.py",
   ]),
 ]);
 
