@@ -574,36 +574,65 @@ export default function HomePage() {
       </section>
 
       {/* ==========================================
-          6. BANNIÈRE FACEBOOK OFFICIELLE (DÉDIÉE)
+          6. BANNIÈRE OFFICIELLE COMMUNAUTÉ WHATSAPP (JUSTE APRÈS TÉMOIGNAGES)
           ========================================== */}
-      <section className="w-full py-14 bg-gradient-to-r from-blue-900 via-blue-800 to-indigo-900 text-white relative overflow-hidden">
+      <section className="w-full py-16 bg-gradient-to-r from-emerald-950 via-emerald-900 to-teal-950 text-white relative overflow-hidden border-y border-emerald-800/40">
+        {/* Glows d'arrière-plan */}
+        <div className="absolute -top-24 -left-24 w-80 h-80 bg-emerald-500/20 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-24 -right-24 w-80 h-80 bg-teal-500/20 rounded-full blur-3xl pointer-events-none" />
+
         <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-8 bg-white/10 backdrop-blur-md border border-white/15 p-8 lg:p-12 rounded-3xl">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-8 bg-white/10 backdrop-blur-xl border border-white/20 p-8 sm:p-12 rounded-3xl shadow-2xl">
             <div className="flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
-              <div className="w-16 h-16 rounded-2xl bg-white text-blue-600 flex items-center justify-center shrink-0 shadow-lg">
-                <svg className="w-10 h-10 fill-current" viewBox="0 0 24 24">
-                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-              </svg>
+              <div className="relative shrink-0">
+                <div className="w-20 h-20 rounded-2xl bg-gradient-to-tr from-emerald-600 to-teal-500 flex items-center justify-center text-white shadow-xl shadow-emerald-900/40 ring-4 ring-white/20">
+                  <span className="material-symbols-outlined text-[44px]">groups</span>
+                </div>
+                <span className="absolute -top-1.5 -right-1.5 flex h-4 w-4">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-80" />
+                  <span className="relative inline-flex rounded-full h-4 w-4 bg-emerald-300 ring-2 ring-emerald-950" />
+                </span>
               </div>
-              <div className="space-y-1">
-                <h3 className="text-xl sm:text-2xl font-black text-white">
-                  Rejoignez notre page officielle Facebook
+
+              <div className="space-y-2">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 border border-emerald-400/30 text-emerald-300 text-xs font-bold uppercase tracking-wider">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                  <span>Communauté Ouverte · Plus de 3 500 Acheteurs &amp; Commerçants</span>
+                </div>
+                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
+                  Rejoignez notre Communauté WhatsApp Officielle
                 </h3>
-                <p className="text-blue-100 text-xs sm:text-sm max-w-xl leading-relaxed">
-                  Découvrez chaque semaine nos vidéos en direct des usines de Turquie et de Chine, les nouveaux arrivages et les avis de nos clients partout en Afrique.
+                <p className="text-emerald-100/90 text-sm sm:text-base max-w-xl leading-relaxed">
+                  Accédez en temps réel aux vidéos directes des usines de Chine, Turquie et Dubaï, aux arrivages conteneurs hebdomadaires et aux opportunités de groupage exclusives.
                 </p>
               </div>
             </div>
 
-            <a
-              href={CONTACT_INFO.facebookUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-white text-blue-800 hover:bg-blue-50 font-black text-sm shadow-xl transition-all shrink-0 hover:scale-105"
-            >
-              <span>Suivre notre page Facebook</span>
-              <span className="material-symbols-outlined text-[18px]">open_in_new</span>
-            </a>
+            <div className="flex flex-col sm:flex-row items-center gap-4 shrink-0 w-full sm:w-auto">
+              <a
+                href={CONTACT_INFO.whatsappGroupLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-5 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-white font-black text-base shadow-xl shadow-emerald-950/50 hover:scale-105 active:scale-95 transition-all text-center"
+              >
+                <span className="material-symbols-outlined text-[24px]">forum</span>
+                <span>Rejoindre la Communauté WhatsApp</span>
+                <span className="material-symbols-outlined text-[20px]">arrow_forward</span>
+              </a>
+
+              <a
+                href={CONTACT_INFO.facebookUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-5 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-sm transition-all"
+                title="Notre page Facebook"
+              >
+                <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                </svg>
+                <span>Facebook</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
