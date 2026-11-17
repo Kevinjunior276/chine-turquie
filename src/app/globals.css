@@ -201,3 +201,15 @@
   transform: translateX(-150%);
   animation: shimmer 3s infinite;
 }
+
+/* Fallback et gradients de texte ultra-nets et lisibles */
+.text-gold-vibrant {
+  color: #fbbf24;
+  text-shadow: 0 0 20px rgba(251, 191, 36, 0.35);
+}
+
+.text-red-vibrant {
+  color: #ef4444;
+  text-shadow: 0 0 20px rgba(239, 68, 68, 0.35);
+}
+

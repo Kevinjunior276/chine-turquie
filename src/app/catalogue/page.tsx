@@ -56,7 +56,7 @@ export default function CataloguePage() {
 
           <h1 className="text-3xl sm:text-5xl font-black tracking-tight text-white max-w-3xl leading-tight">
             Explorez notre catalogue de{" "}
-            <span className="bg-gradient-to-r from-red-500 via-rose-400 to-amber-400 bg-clip-text text-transparent">
+            <span className="text-amber-400 drop-shadow-[0_2px_12px_rgba(251,191,36,0.35)]">
               produits certifiés
             </span>
             .

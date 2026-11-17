@@ -30,9 +30,9 @@ export default function AProposPage() {
             </span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight max-w-4xl">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight max-w-4xl text-white">
             Votre pont d&apos;achat direct entre les usines mondiales et{" "}
-            <span className="bg-gradient-to-r from-red-500 via-rose-400 to-amber-400 bg-clip-text text-transparent">
+            <span className="text-amber-400 drop-shadow-[0_2px_12px_rgba(251,191,36,0.35)]">
               l&apos;Afrique
             </span>
           </h1>
