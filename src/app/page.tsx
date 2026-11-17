@@ -24,25 +24,25 @@ export default function HomePage() {
       <section className="relative w-full overflow-hidden bg-slate-950 -mt-20 pt-32 pb-20 lg:pt-44 lg:pb-32 text-white">
         {/* Real Massive Warehouse Background Photography from our Logistics Hub */}
         <div 
-          className="absolute inset-0 bg-cover bg-center mix-blend-overlay opacity-35 scale-105 transition-transform duration-1000 ease-out"
+          className="absolute inset-0 bg-cover bg-center mix-blend-overlay opacity-50 scale-105 transition-transform duration-1000 ease-out"
           style={{
             backgroundImage: "url('/images/entrepot-hangar-logistique.jpg')"
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-950/85 via-slate-950/90 to-slate-950" />
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-950/70 via-slate-900/80 to-slate-950" />
         
         {/* Glowing atmospheric orbs */}
-        <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-red-600/20 blur-3xl pointer-events-none animate-pulse-glow" />
-        <div className="absolute top-1/2 -left-32 w-80 h-80 rounded-full bg-emerald-500/15 blur-3xl pointer-events-none" />
+        <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-red-600/35 blur-3xl pointer-events-none animate-pulse-glow" />
+        <div className="absolute top-1/2 -left-32 w-80 h-80 rounded-full bg-amber-500/20 blur-3xl pointer-events-none" />
 
         <div className="relative max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-8 z-10">
           {/* Top Badge */}
-          <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/10 self-start shadow-lg">
+          <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-red-600/20 backdrop-blur-md border border-red-500/40 self-start shadow-xl">
             <span className="relative flex h-2.5 w-2.5">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500" />
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-80" />
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-400" />
             </span>
-            <span className="text-xs uppercase tracking-widest font-bold text-slate-200">
+            <span className="text-xs uppercase tracking-widest font-black text-white">
               Pôles Agréés : Chine • Turquie • Dubaï ➔ Afrique
             </span>
           </div>
@@ -51,11 +51,11 @@ export default function HomePage() {
           <div className="max-w-4xl flex flex-col gap-6">
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.15] text-white">
               Achetez Directement aux Usines Mondiales avec{" "}
-              <span className="bg-gradient-to-r from-red-500 via-rose-400 to-amber-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-red-500 via-rose-400 to-amber-300 bg-clip-text text-transparent">
                 Express Chine &amp; Turquie
               </span>
             </h1>
-            <p className="text-base sm:text-xl text-slate-300 max-w-2xl leading-relaxed font-normal">
+            <p className="text-base sm:text-xl text-slate-200 max-w-2xl leading-relaxed font-normal">
               Votre partenaire de confiance pour le sourcing direct d&apos;usine, la négociation de prix, le contrôle qualité vidéo et le transport sécurisé (Air Cargo &amp; Fret Maritime) jusqu&apos;à votre destination en Afrique.
             </p>
           </div>
@@ -64,7 +64,7 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
             <Link
               href="/catalogue"
-              className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 text-white font-bold text-base shadow-xl shadow-red-600/30 transform hover:-translate-y-0.5 transition-all duration-200"
+              className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-gradient-to-r from-red-600 via-rose-600 to-red-600 hover:from-red-500 hover:to-rose-500 text-white font-black text-base shadow-xl shadow-red-600/40 transform hover:-translate-y-0.5 transition-all duration-200"
             >
               <span className="material-symbols-outlined text-[20px]">storefront</span>
               <span>Explorer le catalogue 2025</span>
@@ -72,20 +72,20 @@ export default function HomePage() {
             </Link>
 
             <a
-              href={CONTACT_INFO.getWhatsappUrl()}
+              href={CONTACT_INFO.whatsappGroupLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-base shadow-lg transition-all duration-200 hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-gradient-to-r from-emerald-600 via-teal-600 to-emerald-600 hover:from-emerald-500 hover:to-teal-500 text-white font-black text-base shadow-xl shadow-emerald-600/40 transition-all duration-200 hover:-translate-y-0.5"
             >
-              <span className="material-symbols-outlined text-[22px]">chat</span>
-              <span>Parler au Directeur Trade</span>
+              <span className="material-symbols-outlined text-[22px]">groups</span>
+              <span>Communauté WhatsApp</span>
             </a>
 
             <a
               href={CONTACT_INFO.facebookUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-3 px-6 py-4 rounded-xl bg-blue-600/30 hover:bg-blue-600/50 border border-blue-400/30 text-white font-bold text-base transition-all duration-200 hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center gap-3 px-6 py-4 rounded-xl bg-[#1877F2] hover:bg-[#166fe5] text-white font-black text-base shadow-xl shadow-blue-600/30 transition-all duration-200 hover:-translate-y-0.5"
             >
               <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
                 <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
@@ -96,33 +96,33 @@ export default function HomePage() {
 
           {/* Quick Metrics / Reassurance Badges */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6 border-t border-white/10 max-w-4xl">
-            <div className="flex items-center gap-4 p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/5 hover:border-white/15 transition-all">
-              <div className="w-12 h-12 rounded-xl bg-red-600/20 border border-red-500/30 flex items-center justify-center text-red-400 shrink-0">
+            <div className="flex items-center gap-4 p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 hover:border-red-500/50 transition-all shadow-lg">
+              <div className="w-12 h-12 rounded-xl bg-red-600/30 border-2 border-red-500/60 flex items-center justify-center text-red-400 shrink-0 shadow-md">
                 <span className="material-symbols-outlined text-[26px]">precision_manufacturing</span>
               </div>
               <div>
-                <p className="text-white font-bold text-base">Prix Direct Usine</p>
-                <p className="text-xs text-slate-400 mt-0.5">Shenzhen, Istanbul &amp; Dubaï</p>
+                <p className="text-white font-black text-base">Prix Direct Usine</p>
+                <p className="text-xs text-slate-300 mt-0.5 font-medium">Shenzhen, Istanbul &amp; Dubaï</p>
               </div>
             </div>
 
-            <div className="flex items-center gap-4 p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/5 hover:border-white/15 transition-all">
-              <div className="w-12 h-12 rounded-xl bg-emerald-600/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
+            <div className="flex items-center gap-4 p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 hover:border-emerald-500/50 transition-all shadow-lg">
+              <div className="w-12 h-12 rounded-xl bg-emerald-600/30 border-2 border-emerald-500/60 flex items-center justify-center text-emerald-400 shrink-0 shadow-md">
                 <span className="material-symbols-outlined text-[26px]">verified_user</span>
               </div>
               <div>
-                <p className="text-white font-bold text-base">Contrôle Qualité Vidéo</p>
-                <p className="text-xs text-slate-400 mt-0.5">Validation avant chaque départ</p>
+                <p className="text-white font-black text-base">Contrôle Qualité Vidéo</p>
+                <p className="text-xs text-slate-300 mt-0.5 font-medium">Validation avant chaque départ</p>
               </div>
             </div>
 
-            <div className="flex items-center gap-4 p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/5 hover:border-white/15 transition-all">
-              <div className="w-12 h-12 rounded-xl bg-amber-600/20 border border-amber-500/30 flex items-center justify-center text-amber-400 shrink-0">
+            <div className="flex items-center gap-4 p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 hover:border-amber-500/50 transition-all shadow-lg">
+              <div className="w-12 h-12 rounded-xl bg-amber-600/30 border-2 border-amber-500/60 flex items-center justify-center text-amber-400 shrink-0 shadow-md">
                 <span className="material-symbols-outlined text-[26px]">flight_takeoff</span>
               </div>
               <div>
-                <p className="text-white font-bold text-base">Air Cargo &amp; Fret Mer</p>
-                <p className="text-xs text-slate-400 mt-0.5">LTA / Connaissement sécurisé</p>
+                <p className="text-white font-black text-base">Air Cargo &amp; Fret Mer</p>
+                <p className="text-xs text-slate-300 mt-0.5 font-medium">LTA / Connaissement sécurisé</p>
               </div>
             </div>
           </div>
@@ -316,12 +316,23 @@ export default function HomePage() {
 
                   {/* Price & Action */}
                   <div className="pt-4 border-t border-slate-100 flex flex-col gap-3">
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-center justify-between gap-2">
                       <div>
-                        <span className="text-[11px] text-slate-400 uppercase font-semibold block">Prix / Cotation</span>
-                        <span className="text-xs sm:text-sm font-extrabold text-slate-900">{product.priceEstimate}</span>
+                        <span className="text-[11px] text-slate-500 uppercase font-black block tracking-wider">
+                          {product.category === "auto" ? "Prix Clé en main" : "Tarif Indicatif"}
+                        </span>
+                        {product.category === "auto" ? (
+                          <span className="text-xs sm:text-sm font-black text-red-600 bg-red-50 border border-red-200 px-2.5 py-1 rounded-lg inline-block mt-0.5 shadow-sm">
+                            {product.priceEstimate}
+                          </span>
+                        ) : (
+                          <span className="text-xs font-black text-emerald-800 bg-emerald-50 border border-emerald-300 px-2.5 py-1 rounded-lg inline-flex items-center gap-1.5 mt-0.5 shadow-sm">
+                            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                            {product.priceEstimate}
+                          </span>
+                        )}
                       </div>
-                      <span className="text-[11px] font-medium px-2 py-1 rounded bg-slate-100 text-slate-600">
+                      <span className="text-[11px] font-bold px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 border border-slate-200 shrink-0">
                         {product.moq}
                       </span>
                     </div>
@@ -330,7 +341,7 @@ export default function HomePage() {
                       href={CONTACT_INFO.getProductInquiryUrl(product.title)}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md hover:shadow-lg transition-all"
+                      className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-emerald-600 via-teal-600 to-emerald-600 hover:from-emerald-500 hover:to-teal-500 text-white font-black text-xs sm:text-sm flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/30 transition-all hover:scale-[1.02] active:scale-95"
                     >
                       <span className="material-symbols-outlined text-[18px]">chat</span>
                       <span>Commander sur WhatsApp</span>
@@ -362,7 +373,7 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* 1. Véhicules Importation */}
-            <div className="group relative bg-slate-50 rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+            <div className="group relative bg-white rounded-3xl overflow-hidden border-2 border-slate-100 hover:border-red-500/40 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col hover:-translate-y-1.5">
               <div className="relative h-56 overflow-hidden">
                 <img
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -393,7 +404,7 @@ export default function HomePage() {
             </div>
 
             {/* 2. Téléphonie & Informatique */}
-            <div className="group relative bg-slate-50 rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+            <div className="group relative bg-white rounded-3xl overflow-hidden border-2 border-slate-100 hover:border-red-500/40 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col hover:-translate-y-1.5">
               <div className="relative h-56 overflow-hidden">
                 <img
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -424,7 +435,7 @@ export default function HomePage() {
             </div>
 
             {/* 3. Perruques & Mèches Humaines */}
-            <div className="group relative bg-slate-50 rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+            <div className="group relative bg-white rounded-3xl overflow-hidden border-2 border-slate-100 hover:border-red-500/40 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col hover:-translate-y-1.5">
               <div className="relative h-56 overflow-hidden">
                 <img
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -455,7 +466,7 @@ export default function HomePage() {
             </div>
 
             {/* 4. Mode & Confection */}
-            <div className="group relative bg-slate-50 rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+            <div className="group relative bg-white rounded-3xl overflow-hidden border-2 border-slate-100 hover:border-red-500/40 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col hover:-translate-y-1.5">
               <div className="relative h-56 overflow-hidden">
                 <img
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -486,7 +497,7 @@ export default function HomePage() {
             </div>
 
             {/* 5. Chaussures & Baskets */}
-            <div className="group relative bg-slate-50 rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+            <div className="group relative bg-white rounded-3xl overflow-hidden border-2 border-slate-100 hover:border-red-500/40 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col hover:-translate-y-1.5">
               <div className="relative h-56 overflow-hidden">
                 <img
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -517,7 +528,7 @@ export default function HomePage() {
             </div>
 
             {/* 6. Énergie, Friperie & Usines */}
-            <div className="group relative bg-slate-50 rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+            <div className="group relative bg-white rounded-3xl overflow-hidden border-2 border-slate-100 hover:border-red-500/40 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col hover:-translate-y-1.5">
               <div className="relative h-56 overflow-hidden">
                 <img
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -576,28 +587,28 @@ export default function HomePage() {
       {/* ==========================================
           6. BANNIÈRE OFFICIELLE COMMUNAUTÉ WHATSAPP (JUSTE APRÈS TÉMOIGNAGES)
           ========================================== */}
-      <section className="w-full py-16 bg-gradient-to-br from-emerald-600 via-teal-700 to-emerald-900 text-white relative overflow-hidden shadow-2xl">
+      <section className="w-full py-16 bg-gradient-to-br from-[#064e3b] via-[#047857] to-[#065f46] text-white relative overflow-hidden shadow-2xl border-y-4 border-emerald-500/50">
         {/* Glows d'arrière-plan */}
-        <div className="absolute -top-24 -left-24 w-80 h-80 bg-white/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute -bottom-24 -right-24 w-80 h-80 bg-emerald-400/20 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -top-24 -left-24 w-80 h-80 bg-emerald-400/25 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-24 -right-24 w-80 h-80 bg-teal-300/20 rounded-full blur-3xl pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-8 bg-white/10 backdrop-blur-xl border border-white/25 p-8 sm:p-12 rounded-3xl shadow-2xl">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-8 bg-white/10 backdrop-blur-xl border-2 border-white/30 p-8 sm:p-12 rounded-3xl shadow-2xl ring-1 ring-emerald-300/20">
             <div className="flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
               <div className="relative shrink-0">
-                <div className="w-20 h-20 rounded-2xl bg-white text-emerald-700 flex items-center justify-center shadow-2xl ring-4 ring-white/30">
+                <div className="w-20 h-20 rounded-2xl bg-white text-emerald-800 flex items-center justify-center shadow-2xl ring-4 ring-white/40">
                   <svg className="w-10 h-10 fill-current" viewBox="0 0 24 24">
                     <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
                   </svg>
                 </div>
                 <span className="absolute -top-1.5 -right-1.5 flex h-4 w-4">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-300 opacity-80" />
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-300 opacity-90" />
                   <span className="relative inline-flex rounded-full h-4 w-4 bg-emerald-400 ring-2 ring-white" />
                 </span>
               </div>
 
               <div className="space-y-3">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 border border-white/30 text-white text-xs font-bold uppercase tracking-wider">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/20 border border-white/30 text-white text-xs font-black uppercase tracking-wider shadow-sm">
                   <span className="w-2 h-2 rounded-full bg-emerald-300 animate-pulse" />
                   <span>Communauté Officielle · +3 500 Importateurs &amp; Commerçants</span>
                 </div>
@@ -607,7 +618,7 @@ export default function HomePage() {
                 <p className="text-emerald-50 text-sm sm:text-base max-w-xl leading-relaxed font-medium">
                   Accédez aux vidéos directes des usines de Chine, Turquie et Dubaï, aux arrivages hebdomadaires et aux opportunités de groupage pour maximiser vos marges en Afrique.
                 </p>
-                <div className="flex flex-wrap items-center gap-4 pt-1 text-xs text-white/90 font-semibold">
+                <div className="flex flex-wrap items-center gap-4 pt-1 text-xs text-white font-bold">
                   <span className="flex items-center gap-1.5">
                     <svg className="w-4 h-4 fill-emerald-300 shrink-0" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
                     100% Gratuit &amp; Ouvert
@@ -629,7 +640,7 @@ export default function HomePage() {
                 href={CONTACT_INFO.whatsappGroupLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-5 rounded-2xl bg-white text-emerald-900 hover:bg-emerald-50 font-black text-base shadow-2xl hover:scale-105 active:scale-95 transition-all text-center"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-5 rounded-2xl bg-white text-emerald-950 hover:bg-emerald-50 font-black text-base shadow-2xl hover:scale-105 active:scale-95 transition-all text-center"
               >
                 <svg className="w-6 h-6 fill-emerald-700 shrink-0" viewBox="0 0 24 24">
                   <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
@@ -642,7 +653,7 @@ export default function HomePage() {
                 href={CONTACT_INFO.facebookUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-5 rounded-2xl bg-white/15 hover:bg-white/25 border border-white/25 text-white font-bold text-sm transition-all"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-5 rounded-2xl bg-[#1877F2] hover:bg-[#166fe5] border border-blue-400 text-white font-black text-sm shadow-xl shadow-blue-900/40 transition-all hover:scale-105"
                 title="Notre page Facebook"
               >
                 <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">

@@ -105,48 +105,34 @@ export default function RootLayout({
                     "on-secondary-fixed": "#0e1c32",
                     "surface-container-lowest": "#ffffff",
                     "tertiary-container": "#007d37",
-                    "primary": "#ac0015",
-                    "secondary": "#525f78",
-                    "on-primary": "#ffffff",
-                    "on-tertiary-container": "#b9ffc0",
-                    "secondary-container": "#d3e0fe",
-                    "surface-container-highest": "#e0e3e5",
-                    "on-tertiary-fixed-variant": "#005322",
-                    "on-surface-variant": "#5c403d",
-                    "tertiary-fixed-dim": "#3de273"
+                    "primary": "#dc2626",
+                    "primary-container": "#ef4444",
+                    "secondary": "#1e293b",
+                    "secondary-container": "#334155",
+                    "tertiary": "#059669",
+                    "tertiary-container": "#10b981",
+                    "surface": "#ffffff",
+                    "surface-bright": "#ffffff",
+                    "surface-container": "#f8fafc",
+                    "surface-container-low": "#ffffff",
+                    "surface-container-high": "#f1f5f9",
+                    "surface-container-highest": "#e2e8f0",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface": "#0f172a",
+                    "on-surface-variant": "#334155",
+                    "background": "#f8fafc",
+                    "on-background": "#0f172a",
                   },
-                  borderRadius: {
-                    "DEFAULT": "0.25rem",
-                    "lg": "0.5rem",
-                    "xl": "0.75rem",
-                    "full": "9999px"
-                  },
-                  fontFamily: {
-                    "body-lg": ["Plus Jakarta Sans", "sans-serif"],
-                    "headline-md": ["Montserrat", "sans-serif"],
-                    "body-sm": ["Plus Jakarta Sans", "sans-serif"],
-                    "display-lg": ["Montserrat", "sans-serif"],
-                    "display-lg-mobile": ["Montserrat", "sans-serif"],
-                    "title-lg": ["Plus Jakarta Sans", "sans-serif"],
-                    "title-md": ["Plus Jakarta Sans", "sans-serif"],
-                    "label-md": ["Plus Jakarta Sans", "sans-serif"],
-                    "headline-lg-mobile": ["Montserrat", "sans-serif"],
-                    "headline-sm": ["Montserrat", "sans-serif"],
-                    "label-sm": ["Plus Jakarta Sans", "sans-serif"],
-                    "body-md": ["Plus Jakarta Sans", "sans-serif"],
-                    "label-lg": ["Montserrat", "sans-serif"],
-                    "headline-lg": ["Montserrat", "sans-serif"]
-                  }
-                }
-              }
+                },
+              },
             };
           `,
           }}
         />
       </head>
-      <body className="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col">
+      <body className="bg-slate-50 font-sans text-slate-900 antialiased min-h-screen flex flex-col">
         <Navbar />
-        <main className="w-full pt-20 bg-surface flex-1">{children}</main>
+        <main className="w-full pt-20 bg-slate-50 flex-1">{children}</main>
         <Footer />
         <WhatsAppFloat />
       </body>
