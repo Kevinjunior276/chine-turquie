@@ -1,0 +1,35 @@
+import type { MetadataRoute } from "next";
+
+export default function manifest(): MetadataRoute.Manifest {
+  return {
+    name: "EXPRESS CHINE & TURQUIE",
+    short_name: "Express Trade",
+    description: "Sourcing Direct d'Usine & Logistique Globale vers l'Afrique depuis la Chine, la Turquie et Dubaï",
+    start_url: "/",
+    display: "standalone",
+    background_color: "#0f172a",
+    theme_color: "#dc2626",
+    orientation: "portrait-primary",
+    icons: [
+      {
+        src: "/images/logo.png",
+        sizes: "192x192",
+        type: "image/png",
+        purpose: "any",
+      },
+      {
+        src: "/images/logo.png",
+        sizes: "512x512",
+        type: "image/png",
+        purpose: "any",
+      },
+      {
+        src: "/images/logo.png",
+        sizes: "512x512",
+        type: "image/png",
+        purpose: "maskable",
+      },
+    ],
+    categories: ["business", "shopping", "productivity"],
+  };
+}

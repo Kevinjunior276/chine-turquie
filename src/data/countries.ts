@@ -3,6 +3,7 @@ export const CONTACT_INFO = {
   directorTitle: 'Directeur des Opérations Internationales & Trade',
   whatsappNumber: '+905301378199',
   whatsappDisplay: '+90 530 137 8199',
+  phoneDisplay: '+90 530 137 8199',
   whatsappGroupLink: 'https://chat.whatsapp.com/DUbWN0PWa3B9Ax4P6zu6oF',
   facebookUrl: 'https://www.facebook.com/share/1A1hYdFb2V/',
   getWhatsappUrl: (message?: string) => {

@@ -3,6 +3,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import CookieBanner from "@/components/CookieBanner";
+import PWAInstallPrompt from "@/components/PWAInstallPrompt";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://expresschineturquie.com"),
@@ -43,6 +45,12 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/images/logo.png" type="image/png" />
         <link rel="apple-touch-icon" href="/images/logo.png" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#dc2626" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-title" content="Express Trade" />
+        <meta name="application-name" content="EXPRESS CHINE &amp; TURQUIE" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link
@@ -63,6 +71,8 @@ export default function RootLayout({
         <main className="w-full pt-20 bg-slate-50 flex-1">{children}</main>
         <Footer />
         <WhatsAppFloat />
+        <CookieBanner />
+        <PWAInstallPrompt />
       </body>
     </html>
   );
