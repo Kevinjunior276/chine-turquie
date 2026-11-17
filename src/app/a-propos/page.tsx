@@ -1,292 +1,206 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { CONTACT_INFO } from "@/data/countries";
+
+export const metadata: Metadata = {
+  title: "À Propos & Pôles de Sourcing | EXPRESS CHINE & TURQUIE",
+  description:
+    "Découvrez notre réseau d'usines en Chine, Turquie et Dubaï. Spécialiste de l'intermédiation directe sans intermédiaires pour les importateurs et commerçants africains.",
+};
 
 export default function AProposPage() {
   return (
-    <div className="flex flex-col w-full bg-slate-50 min-h-screen">
-      {/* 1. HERO INSTITUTIONNEL */}
-      <section className="relative w-full bg-slate-950 text-white overflow-hidden py-24 lg:py-32">
-        {/* Real Cargo Container Ship Background */}
-        <div 
+    <div className="flex flex-col w-full bg-slate-50">
+      {/* 1. HERO HEADER */}
+      <section className="relative w-full bg-slate-950 text-white -mt-20 pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+        <div
           className="absolute inset-0 bg-cover bg-center mix-blend-overlay opacity-30 scale-105"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1541888946425-d0fbb18086f7?auto=format&fit=crop&w=1600&q=80')"
+            backgroundImage: "url('/images/entrepot-hangar-logistique.jpg')"
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/90 to-slate-950" />
-        <div className="absolute top-1/2 -right-32 w-96 h-96 bg-red-600/15 rounded-full blur-3xl pointer-events-none" />
 
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center z-10">
-          <div className="lg:col-span-7 flex flex-col gap-6">
-            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/10 px-4 py-1.5 rounded-full w-fit backdrop-blur-md">
-              <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
-              <span className="text-xs uppercase tracking-wider text-slate-200 font-bold">
-                Sourcing Global &amp; Logistique Dématérialisée
-              </span>
-            </div>
-
-            <h1 className="text-3xl sm:text-5xl font-black text-white uppercase tracking-tight leading-tight">
-              Faciliter vos achats, rapprocher les opportunités mondiales.
-            </h1>
-
-            <p className="text-base sm:text-lg text-slate-300 max-w-xl leading-relaxed">
-              Le trait d'union direct entre les usines de Chine, les plateformes de Dubaï, le savoir-faire de Turquie et les entrepreneurs du continent africain.
-            </p>
-
-            <div className="flex flex-wrap items-center gap-4 pt-2">
-              <a
-                className="inline-flex items-center gap-3 bg-red-600 hover:bg-red-500 text-white px-8 py-4 rounded-xl font-bold text-base shadow-xl shadow-red-600/25 transition-all hover:-translate-y-0.5"
-                href={CONTACT_INFO.getWhatsappUrl()}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="material-symbols-outlined text-[22px]">chat</span>
-                <span>Contacter la direction trade</span>
-              </a>
-
-              <a
-                className="inline-flex items-center gap-2 text-slate-300 hover:text-white font-semibold text-sm transition-colors px-4 py-4"
-                href="#poles"
-              >
-                <span>Découvrir nos 3 pôles</span>
-                <span className="material-symbols-outlined text-[18px]">arrow_downward</span>
-              </a>
-            </div>
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-6 z-10">
+          <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 self-start">
+            <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
+            <span className="text-xs uppercase tracking-widest font-extrabold text-slate-200">
+              Intermédiation &amp; Logistique Directe
+            </span>
           </div>
 
-          <div className="lg:col-span-5 relative">
-            <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-slate-900 border border-white/10 group">
-              <img
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                src="https://images.unsplash.com/photo-1570710891163-6d3b5c47248b?auto=format&fit=crop&w=1000&q=80"
-                alt="Fret aérien et maritime international"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-transparent to-transparent" />
-              <div className="absolute bottom-5 left-5 right-5 flex items-center justify-between text-white">
-                <div>
-                  <span className="text-[11px] uppercase block tracking-widest text-red-400 font-bold">Réseau Maritime &amp; Aérien</span>
-                  <span className="text-base font-bold">Liaisons Directes Afrique</span>
-                </div>
-                <div className="flex items-center gap-1.5 bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 px-3 py-1 rounded-full text-xs font-semibold">
-                  <span className="material-symbols-outlined text-[16px]">verified</span>
-                  <span>100% Dédié</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight max-w-4xl">
+            Votre pont d&apos;achat direct entre les usines mondiales et{" "}
+            <span className="bg-gradient-to-r from-red-500 via-rose-400 to-amber-400 bg-clip-text text-transparent">
+              l&apos;Afrique
+            </span>
+          </h1>
+
+          <p className="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
+            Supprimer les intermédiaires superflus pour vous garantir le véritable prix usine en Chine, Turquie et Dubaï avec un contrôle qualité rigoureux et un fret sécurisé.
+          </p>
         </div>
       </section>
 
-      {/* 2. SECTION QUI SOMMES-NOUS ? */}
-      <section className="w-full bg-white py-20 border-b border-slate-200">
+      {/* 2. NOTRE MISSION & VALEURS */}
+      <section className="w-full py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div className="lg:col-span-5 flex flex-col gap-6">
-              <div className="flex items-center gap-2">
-                <span className="w-8 h-1 bg-red-600" />
-                <span className="text-xs uppercase tracking-wider font-extrabold text-red-600">Présentation Officielle</span>
+            <div className="lg:col-span-6 relative">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl group border border-slate-200 bg-slate-100 h-[480px]">
+                <img
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  src="/images/usine-tri-textile.jpg"
+                  alt="Fret aérien et maritime international"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+                <div className="absolute bottom-6 left-6 right-6 p-5 bg-white/95 backdrop-blur-md rounded-xl shadow-lg border border-white/50">
+                  <div className="flex items-center gap-3">
+                    <div className="relative w-11 h-11 rounded-full overflow-hidden shrink-0 ring-2 ring-red-600/30">
+                      <Image
+                        src="/images/logo.png"
+                        alt="Logo Express Chine Turquie"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div>
+                      <p className="font-extrabold text-slate-900 text-sm">EXPRESS CHINE &amp; TURQUIE</p>
+                      <p className="text-xs text-slate-500">Direction Trade : {CONTACT_INFO.directorName}</p>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
+
+            <div className="lg:col-span-6 flex flex-col gap-6">
+              <div className="inline-flex items-center gap-3">
+                <span className="text-xs uppercase font-extrabold tracking-widest text-red-600">
+                  Transparence &amp; Rigueur
+                </span>
+                <div className="h-0.5 w-12 bg-red-600" />
+              </div>
+
               <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
-                Un pont stratégique entre les grands marchés mondiaux et l'Afrique.
+                Permettre à chaque commerçant africain d&apos;acheter comme un grand groupe.
               </h2>
-              <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-                <strong className="text-slate-900 font-bold">EXPRESS CHINE &amp; TURQUIE</strong> accompagne les particuliers et les professionnels dans la recherche, l'achat et l'expédition de marchandises depuis la Chine, Dubaï et la Turquie vers plusieurs marchés africains.
+
+              <p className="text-base text-slate-700 leading-relaxed">
+                Pendant des années, les commerçants africains ont dû passer par une cascade de revendeurs locaux qui multipliaient les marges par 2 ou 3.
               </p>
-              <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col gap-1.5">
-                <span className="text-xs uppercase text-slate-500 font-bold">Modèle Opérationnel Transparent</span>
-                <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  Opérant selon un modèle digital et connecté, nous assurons l'orchestration complète de vos acquisitions sans intermédiaires inutiles.
-                </p>
-              </div>
-            </div>
 
-            <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {/* Item 1 */}
-              <div className="bg-slate-50 border border-slate-200/80 p-6 rounded-2xl flex flex-col gap-3 shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 rounded-xl bg-red-600 text-white flex items-center justify-center">
-                  <span className="material-symbols-outlined text-[24px]">factory</span>
-                </div>
-                <h3 className="text-base sm:text-lg font-bold text-slate-900">Sourcing direct usines</h3>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                  Négociation directe auprès des fabricants, manufactures et grossistes certifiés pour obtenir les prix d'origine sans surcoûts superflus.
-                </p>
-              </div>
+              <p className="text-sm text-slate-600 leading-relaxed">
+                <strong className="text-slate-900">EXPRESS CHINE &amp; TURQUIE</strong> a été créé pour casser ce schéma : nous négocions directement avec les fabricants, nous vérifions physiquement les marchandises et nous vous envoyons une vidéo d&apos;inspection avant tout départ en avion ou en bateau.
+              </p>
 
-              {/* Item 2 */}
-              <div className="bg-slate-50 border border-slate-200/80 p-6 rounded-2xl flex flex-col gap-3 shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 rounded-xl bg-slate-900 text-white flex items-center justify-center">
-                  <span className="material-symbols-outlined text-[24px]">inventory</span>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                  <span className="material-symbols-outlined text-red-600 text-[26px] mb-1 block">speed</span>
+                  <p className="font-bold text-slate-900 text-sm">Zéro Intermédiaire Caché</p>
+                  <p className="text-xs text-slate-600 mt-1">Vous achetez directement à la source avec facturation usine limpide.</p>
                 </div>
-                <h3 className="text-base sm:text-lg font-bold text-slate-900">Coordination rigoureuse</h3>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                  Contrôle strict des volumes, vérification de conformité visuelle et regroupement efficace de vos cargaisons avant envoi.
-                </p>
-              </div>
-
-              {/* Item 3 */}
-              <div className="bg-slate-50 border border-slate-200/80 p-6 rounded-2xl flex flex-col gap-3 shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 rounded-xl bg-slate-900 text-white flex items-center justify-center">
-                  <span className="material-symbols-outlined text-[24px]">local_shipping</span>
+                <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                  <span className="material-symbols-outlined text-emerald-600 text-[26px] mb-1 block">videocam</span>
+                  <p className="font-bold text-slate-900 text-sm">Validation Vidéo Directe</p>
+                  <p className="text-xs text-slate-600 mt-1">Vidéo WhatsApp détaillée de vos colis avant le règlement du solde.</p>
                 </div>
-                <h3 className="text-base sm:text-lg font-bold text-slate-900">Expéditions sécurisées</h3>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                  Acheminement optimisé par voie maritime pour le fret lourd et par fret aérien express pour vos approvisionnements d'urgence.
-                </p>
-              </div>
-
-              {/* Item 4 */}
-              <div className="bg-slate-50 border border-slate-200/80 p-6 rounded-2xl flex flex-col gap-3 shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center">
-                  <span className="material-symbols-outlined text-[24px]">support_agent</span>
-                </div>
-                <h3 className="text-base sm:text-lg font-bold text-slate-900">Relation 100% dédiée</h3>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                  Interlocuteur unique à distance, mises à jour régulières et canal de communication instantané pour répondre à chaque étape.
-                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 3. MISSION & VISION */}
-      <section className="w-full bg-slate-50 py-20 border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="text-center max-w-2xl mx-auto mb-14 flex flex-col gap-2">
-            <span className="text-xs uppercase tracking-wider font-extrabold text-red-600">Ambition &amp; Direction</span>
-            <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900">Une boussole stratégique claire</h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
-            {/* Mission Card */}
-            <div className="bg-white p-8 lg:p-10 rounded-3xl shadow-sm border border-slate-200/80 flex flex-col justify-between relative overflow-hidden group">
-              <div className="absolute top-0 left-0 w-2 h-full bg-red-600" />
-              <div className="flex flex-col gap-4">
-                <div className="flex items-center justify-between">
-                  <span className="text-xs uppercase tracking-widest text-red-600 font-extrabold">Notre Mission</span>
-                  <span className="material-symbols-outlined text-red-600 text-[32px]">task_alt</span>
-                </div>
-                <blockquote className="text-lg sm:text-xl font-bold text-slate-900 leading-relaxed">
-                  « Faciliter l'accès à une diversité de produits et accompagner les clients dans leurs projets d'achat et d'approvisionnement. »
-                </blockquote>
-              </div>
-              <p className="text-xs sm:text-sm text-slate-600 mt-6 leading-relaxed">
-                Nous levons les barrières linguistiques, géographiques et administratives en devenant votre bras opérationnel directement au contact des fabricants mondiaux.
-              </p>
-            </div>
-
-            {/* Vision Card */}
-            <div className="bg-slate-950 text-white p-8 lg:p-10 rounded-3xl shadow-xl flex flex-col justify-between relative overflow-hidden group border border-slate-800">
-              <div className="absolute top-0 left-0 w-2 h-full bg-emerald-500" />
-              <div className="flex flex-col gap-4">
-                <div className="flex items-center justify-between">
-                  <span className="text-xs uppercase tracking-widest text-emerald-400 font-extrabold">Notre Vision</span>
-                  <span className="material-symbols-outlined text-emerald-400 text-[32px]">visibility</span>
-                </div>
-                <blockquote className="text-lg sm:text-xl font-bold text-white leading-relaxed">
-                  « Rendre les échanges commerciaux mondiaux et l'accès aux usines plus simples, transparents et accessibles pour les marchés africains. »
-                </blockquote>
-              </div>
-              <p className="text-xs sm:text-sm text-slate-300 mt-6 leading-relaxed">
-                Permettre aux PME, commerçants, revendeurs et artisans d'évoluer avec la même force logistique et la même compétitivité tarifaire que les grands groupes mondiaux.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 4. NOS 3 PÔLES D'APPROVISIONNEMENT MONDIAUX */}
-      <section className="w-full bg-white py-20" id="poles">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="text-center max-w-3xl mx-auto mb-14 flex flex-col gap-2">
-            <span className="text-xs uppercase tracking-wider font-extrabold text-red-600">Géographie du Sourcing</span>
-            <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900">Nos 3 pôles d'approvisionnement mondiaux</h2>
-            <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-              Une présence coordonnée sur les places marchandes les plus compétitives du monde pour répondre à chaque segment d'activité.
+      {/* 3. NOS 3 PÔLES GÉOGRAPHIQUES D'EXCELLENCE */}
+      <section className="w-full py-20 bg-slate-50 border-t border-slate-200">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-12">
+          <div className="text-center max-w-2xl mx-auto">
+            <span className="text-xs uppercase font-extrabold tracking-widest text-red-600 block mb-2">
+              Présence Mondiale
+            </span>
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900">
+              Nos 3 Hubs de Sourcing Stratégiques
+            </h2>
+            <p className="text-slate-600 text-sm sm:text-base mt-2">
+              Chaque pôle est sélectionné pour sa spécialité manufacturière et sa logistique éprouvée.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Pôle Chine */}
-            <div className="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden shadow-sm flex flex-col group hover:shadow-xl transition-shadow">
-              <div className="relative h-52 bg-slate-200 overflow-hidden">
+            {/* Pôle 1: Chine */}
+            <div className="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col group hover:shadow-xl transition-all">
+              <div className="relative h-56 overflow-hidden bg-slate-100">
                 <img
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=800&q=80"
+                  src="/images/smartphones-iphone-palettes.jpg"
                   alt="Chine - Usine du monde"
                 />
-                <div className="absolute top-4 left-4 bg-red-600 text-white text-xs uppercase font-extrabold px-3 py-1 rounded-md">
-                  Pôle 01 • Chine
-                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+                <span className="absolute top-4 left-4 px-3 py-1 bg-red-600 text-white rounded-full text-xs font-black uppercase">
+                  🇨🇳 Chine (Guangzhou, Yiwu, Shenzhen)
+                </span>
               </div>
-              <div className="p-6 flex flex-col flex-1 justify-between gap-4">
+              <div className="p-6 flex-1 flex flex-col justify-between gap-4">
                 <div>
-                  <h3 className="text-lg font-bold text-slate-900">Chine (Guangzhou, Yiwu, Shenzhen)</h3>
-                  <p className="text-xs uppercase font-extrabold text-red-600 mt-0.5">L'usine du monde</p>
+                  <h3 className="text-lg font-bold text-slate-900">L&apos;Usine du Monde</h3>
                   <p className="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
-                    Leader mondial pour l'électronique de pointe, les machines industrielles, les équipements techniques et la production industrielle de masse avec des économies d'échelle imbattables.
+                    Spécialité : Smartphones en gros, PC portables, perruques cheveux humains 12A, baskets streetwear et balles de friperie triée de premier choix.
                   </p>
                 </div>
-                <div className="pt-2 flex flex-wrap gap-2 text-[11px] font-semibold text-slate-700">
-                  <span className="bg-white border border-slate-200 px-2.5 py-1 rounded-md">Électronique</span>
-                  <span className="bg-white border border-slate-200 px-2.5 py-1 rounded-md">Outillage</span>
-                  <span className="bg-white border border-slate-200 px-2.5 py-1 rounded-md">Volume industriel</span>
+                <div className="pt-3 border-t border-slate-100 text-xs text-slate-500 font-semibold">
+                  Transit : Air 5-7j • Fret Maritime 28-35j
                 </div>
               </div>
             </div>
 
-            {/* Pôle Dubaï */}
-            <div className="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden shadow-sm flex flex-col group hover:shadow-xl transition-shadow">
-              <div className="relative h-52 bg-slate-200 overflow-hidden">
+            {/* Pôle 2: Turquie */}
+            <div className="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col group hover:shadow-xl transition-all">
+              <div className="relative h-56 overflow-hidden bg-slate-100">
                 <img
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80"
-                  alt="Dubaï - Hub réexportation"
-                />
-                <div className="absolute top-4 left-4 bg-slate-900 text-white text-xs uppercase font-extrabold px-3 py-1 rounded-md">
-                  Pôle 02 • Dubaï
-                </div>
-              </div>
-              <div className="p-6 flex flex-col flex-1 justify-between gap-4">
-                <div>
-                  <h3 className="text-lg font-bold text-slate-900">Dubaï (Émirats Arabes Unis)</h3>
-                  <p className="text-xs uppercase font-extrabold text-slate-900 mt-0.5">Hub de réexportation rapide</p>
-                  <p className="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
-                    Carrefour stratégique mondial privilégié pour la téléphonie mobile, l&apos;électronique de consommation, les parfums &amp; cosmétiques et les stocks détaxés haute disponibilité.
-                  </p>
-                </div>
-                <div className="pt-2 flex flex-wrap gap-2 text-[11px] font-semibold text-slate-700">
-                  <span className="bg-white border border-slate-200 px-2.5 py-1 rounded-md">Téléphonie &amp; Tech</span>
-                  <span className="bg-white border border-slate-200 px-2.5 py-1 rounded-md">Cosmétiques</span>
-                  <span className="bg-white border border-slate-200 px-2.5 py-1 rounded-md">Transit Express</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Pôle Turquie */}
-            <div className="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden shadow-sm flex flex-col group hover:shadow-xl transition-shadow">
-              <div className="relative h-52 bg-slate-200 overflow-hidden">
-                <img
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=800&q=80"
+                  src="/images/costumes-hommes-turquie.jpg"
                   alt="Turquie - Istanbul & Bursa"
                 />
-                <div className="absolute top-4 left-4 bg-emerald-600 text-white text-xs uppercase font-extrabold px-3 py-1 rounded-md">
-                  Pôle 03 • Turquie
-                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+                <span className="absolute top-4 left-4 px-3 py-1 bg-rose-600 text-white rounded-full text-xs font-black uppercase">
+                  🇹🇷 Turquie (Istanbul, Merter, Bursa)
+                </span>
               </div>
-              <div className="p-6 flex flex-col flex-1 justify-between gap-4">
+              <div className="p-6 flex-1 flex flex-col justify-between gap-4">
                 <div>
-                  <h3 className="text-lg font-bold text-slate-900">Turquie (Istanbul &amp; Bursa)</h3>
-                  <p className="text-xs uppercase font-extrabold text-emerald-600 mt-0.5">Qualité européenne &amp; finitions</p>
+                  <h3 className="text-lg font-bold text-slate-900">Capitale du Textile &amp; Confection</h3>
                   <p className="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
-                    La référence indiscutable pour la haute qualité textile, le prêt-à-porter, le mobilier de standing, la décoration intérieure et les matériaux durables.
+                    Spécialité : Costumes croisés hommes, robes de soirée satin et caftans brodés d&apos;Istanbul, abayas, chemises et chaussures en cuir de ville.
                   </p>
                 </div>
-                <div className="pt-2 flex flex-wrap gap-2 text-[11px] font-semibold text-slate-700">
-                  <span className="bg-white border border-slate-200 px-2.5 py-1 rounded-md">Textile &amp; Mode</span>
-                  <span className="bg-white border border-slate-200 px-2.5 py-1 rounded-md">Mobilier Royal</span>
-                  <span className="bg-white border border-slate-200 px-2.5 py-1 rounded-md">Finitions standing</span>
+                <div className="pt-3 border-t border-slate-100 text-xs text-slate-500 font-semibold">
+                  Transit : Air Express 4-6j • Mer 20-28j
+                </div>
+              </div>
+            </div>
+
+            {/* Pôle 3: Dubaï */}
+            <div className="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col group hover:shadow-xl transition-all">
+              <div className="relative h-56 overflow-hidden bg-slate-100">
+                <img
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  src="/images/landrover-evoque-2023.jpg"
+                  alt="Dubaï - Hub réexportation"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+                <span className="absolute top-4 left-4 px-3 py-1 bg-amber-600 text-white rounded-full text-xs font-black uppercase">
+                  🇦🇪 Dubaï (JAFZA &amp; Deira)
+                </span>
+              </div>
+              <div className="p-6 flex-1 flex flex-col justify-between gap-4">
+                <div>
+                  <h3 className="text-lg font-bold text-slate-900">Hub Mondial des Véhicules &amp; Tech</h3>
+                  <p className="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+                    Spécialité : Véhicules récents et SUV (Range Rover Evoque, Nissan Kicks, Lexus RX), PC portables et réexportation rapide sous douane.
+                  </p>
+                </div>
+                <div className="pt-3 border-t border-slate-100 text-xs text-slate-500 font-semibold">
+                  Transit : Air Cargo 3-5j • RORO Mer 25-30j
                 </div>
               </div>
             </div>
@@ -294,33 +208,38 @@ export default function AProposPage() {
         </div>
       </section>
 
-      {/* 5. BANNIÈRE CONTACT DE CONFIANCE */}
-      <section className="w-full bg-slate-950 text-white py-16">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="bg-white/5 border border-white/10 p-8 lg:p-12 rounded-3xl flex flex-col lg:flex-row items-center justify-between gap-8">
-            <div className="flex flex-col gap-3 max-w-2xl text-center lg:text-left">
-              <div className="inline-flex items-center gap-2 text-emerald-400 font-extrabold text-xs uppercase tracking-wider mx-auto lg:mx-0">
-                <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
-                Direction Opérationnelle
-              </div>
-              <h2 className="text-2xl sm:text-3xl font-black text-white">
-                Échangez directement sur votre prochain approvisionnement
-              </h2>
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                M. FOGENG MARIUS, Directeur Trade International, est à votre écoute pour évaluer la faisabilité de vos achats, orienter vos recherches fournisseurs et planifier vos expéditions.
-              </p>
-            </div>
-            <div className="flex flex-col sm:flex-row items-center gap-4 w-full lg:w-auto justify-center">
-              <a
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-emerald-500 hover:bg-emerald-400 text-slate-950 px-8 py-4 rounded-xl text-sm font-extrabold shadow-lg transition-all"
-                href={CONTACT_INFO.getWhatsappUrl()}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="material-symbols-outlined text-[22px]">chat</span>
-                <span>Contacter sur WhatsApp (+90 530 137 8199)</span>
-              </a>
-            </div>
+      {/* 4. DIRECTION & ENGAGEMENT */}
+      <section className="w-full py-16 bg-slate-900 text-white">
+        <div className="max-w-5xl mx-auto px-6 lg:px-12 text-center flex flex-col items-center gap-6">
+          <div className="w-16 h-16 rounded-full bg-red-600/20 border border-red-500/40 flex items-center justify-center text-red-400">
+            <span className="material-symbols-outlined text-[32px]">support_agent</span>
+          </div>
+
+          <h2 className="text-2xl sm:text-3xl font-extrabold">
+            Un interlocuteur unique à votre écoute
+          </h2>
+
+          <p className="text-slate-300 text-sm sm:text-base max-w-2xl leading-relaxed">
+            Pas de serveurs vocaux ni d&apos;attentes interminables. Vous échangez directement sur WhatsApp avec la direction trade de notre plateforme pour toutes vos cotations et questions logistiques.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 pt-2">
+            <a
+              href={CONTACT_INFO.getWhatsappUrl()}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm shadow-lg transition-all"
+            >
+              <span className="material-symbols-outlined text-[20px]">chat</span>
+              <span>Discuter avec M. Fogeng Marius</span>
+            </a>
+            <Link
+              href="/catalogue"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-sm transition-all border border-white/20"
+            >
+              <span>Consulter le catalogue produits</span>
+              <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+            </Link>
           </div>
         </div>
       </section>

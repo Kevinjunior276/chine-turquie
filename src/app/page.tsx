@@ -19,17 +19,17 @@ export default function HomePage() {
   return (
     <div className="flex flex-col w-full overflow-hidden bg-slate-50">
       {/* ==========================================
-          1. HERO SECTION SPECTACULAIRE & ANIMÉE
+          1. HERO SECTION SPECTACULAIRE & AUTHENTIQUE
           ========================================== */}
       <section className="relative w-full overflow-hidden bg-slate-950 -mt-20 pt-32 pb-20 lg:pt-44 lg:pb-32 text-white">
-        {/* Cinematic Visual Background with Real Cargo Photography */}
+        {/* Real Massive Warehouse Background Photography from our Logistics Hub */}
         <div 
-          className="absolute inset-0 bg-cover bg-center mix-blend-overlay opacity-30 scale-105 transition-transform duration-1000 ease-out"
+          className="absolute inset-0 bg-cover bg-center mix-blend-overlay opacity-35 scale-105 transition-transform duration-1000 ease-out"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1920&q=85')"
+            backgroundImage: "url('/images/entrepot-hangar-logistique.jpg')"
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/90 to-slate-950" />
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-950/85 via-slate-950/90 to-slate-950" />
         
         {/* Glowing atmospheric orbs */}
         <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-red-600/20 blur-3xl pointer-events-none animate-pulse-glow" />
@@ -148,13 +148,9 @@ export default function HomePage() {
             <span className="text-slate-600">•</span>
             <span>FOSHAN ➔ COTONOU (ÉLECTROMÉNAGER)</span>
             <span className="text-slate-600">•</span>
-            <span>SHENZHEN ➔ ABIDJAN (AIR: 5-7j)</span>
+            <span>SHENZHEN ➔ CONAKRY (AIR EXPRESS)</span>
             <span className="text-slate-600">•</span>
-            <span>ISTANBUL ➔ DOUALA (FRET MARITIME)</span>
-            <span className="text-slate-600">•</span>
-            <span>DUBAÏ ➔ DAKAR (EXPRESS CARGO)</span>
-            <span className="text-slate-600">•</span>
-            <span>YIWU ➔ KINSHASA (CONTENEUR 40HC)</span>
+            <span>DUBAÏ ➔ YAOUNDÉ (VÉHICULES SÉCURISÉS)</span>
           </div>
         </div>
       </section>
@@ -165,13 +161,13 @@ export default function HomePage() {
       <section className="w-full py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            {/* Visual Storytelling Imagery with Real Photo */}
+            {/* Visual Storytelling Imagery with Real Factory Sorting Warehouse Photo */}
             <div className="lg:col-span-5 relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-slate-100 group border border-slate-200">
                 <img
                   className="w-full h-[460px] object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
-                  src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1000&q=85"
-                  alt="Inspecteur logistique contrôlant les marchandises dans un entrepôt moderne"
+                  src="/images/usine-tri-textile.jpg"
+                  alt="Inspection et tri de marchandises en usine partenaire"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/20 to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6 p-5 bg-white/95 backdrop-blur-md rounded-xl shadow-lg border border-white/50">
@@ -202,11 +198,11 @@ export default function HomePage() {
               </h2>
 
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                <strong className="text-slate-900 font-bold">EXPRESS CHINE &amp; TURQUIE</strong> est l&apos;interlocuteur de confiance des commerçants, revendeurs de marché, boutiques de quartier et artisans africains qui souhaitent acheter directement aux prix de gros les plus bas en Chine, Turquie et Dubaï.
+                <strong className="text-slate-900 font-bold">EXPRESS CHINE &amp; TURQUIE</strong> est l&apos;interlocuteur de confiance des commerçants, revendeurs de marché, boutiques de quartier et importateurs africains qui souhaitent acheter directement aux prix de gros les plus bas en Chine, Turquie et Dubaï.
               </p>
 
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-                Nous nous concentrons sur des produits populaires et adaptés au pouvoir d&apos;achat local : véhicules fiables, smartphones milieu de gamme, petit électroménager résistant, prêt-à-porter turc recherché, salons confortables et machines d&apos;atelier productives. Nous gérons tout : vérification en usine, cartons scellés et acheminement rapide.
+                Nous gérons tout de bout en bout : véhicules inspectés et garantis, lots de smartphones et PC portables, perruques de cheveux humains vierges 12A, confection textile turque, baskets streetwear et balles de friperie de premier choix. Chaque commande est inspectée en vidéo avant embarquement.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
@@ -214,7 +210,7 @@ export default function HomePage() {
                   <span className="material-symbols-outlined text-red-600 text-[26px] mb-2 block">hub</span>
                   <p className="font-bold text-slate-900 text-base">Réseau d&apos;Usines Vérifiées</p>
                   <p className="text-xs text-slate-600 mt-1 leading-relaxed">
-                    Accès direct aux ateliers à Yiwu, Shenzhen, Foshan et Istanbul sans intermédiaires locaux.
+                    Accès direct aux ateliers à Yiwu, Shenzhen, Guangzhou et Istanbul sans intermédiaires locaux.
                   </p>
                 </div>
 
@@ -232,7 +228,7 @@ export default function HomePage() {
       </section>
 
       {/* ==========================================
-          3. SECTION PRODUITS POPULAIRES (MILIEU DE GAMME AFRIQUE)
+          3. SECTION PRODUITS POPULAIRES (PHOTOS RÉELLES)
           ========================================== */}
       <section className="w-full py-20 bg-slate-50 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-12">
@@ -247,7 +243,7 @@ export default function HomePage() {
                 Les meilleures opportunités d&apos;achat en gros.
               </h2>
               <p className="text-slate-600 text-sm sm:text-base mt-2 max-w-2xl leading-relaxed">
-                Des articles milieu de gamme connus, testés et approuvés pour leur rentabilité immédiate sur les marchés d&apos;Afrique subsaharienne.
+                Des articles milieu et haut de gamme testés et approuvés pour leur rentabilité immédiate sur les marchés d&apos;Afrique subsaharienne.
               </p>
             </div>
 
@@ -255,7 +251,7 @@ export default function HomePage() {
               href="/catalogue"
               className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-slate-900 hover:bg-red-600 text-white font-bold text-sm shadow-md transition-all self-start md:self-auto hover:-translate-y-0.5"
             >
-              <span>Voir tout le catalogue</span>
+              <span>Voir tout le catalogue ({PRODUCTS.length} produits)</span>
               <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
             </Link>
           </div>
@@ -309,7 +305,7 @@ export default function HomePage() {
 
                     {/* Features list */}
                     <div className="mt-3 space-y-1">
-                      {product.features.map((feature, idx) => (
+                      {product.features.slice(0, 3).map((feature, idx) => (
                         <div key={idx} className="flex items-center gap-2 text-xs text-slate-700">
                           <span className="text-emerald-600 font-bold">✓</span>
                           <span>{feature}</span>
@@ -322,7 +318,7 @@ export default function HomePage() {
                   <div className="pt-4 border-t border-slate-100 flex flex-col gap-3">
                     <div className="flex items-center justify-between">
                       <div>
-                        <span className="text-[11px] text-slate-400 uppercase font-semibold block">Prix indicatif usine</span>
+                        <span className="text-[11px] text-slate-400 uppercase font-semibold block">Prix / Cotation</span>
                         <span className="text-xs sm:text-sm font-extrabold text-slate-900">{product.priceEstimate}</span>
                       </div>
                       <span className="text-[11px] font-medium px-2 py-1 rounded bg-slate-100 text-slate-600">
@@ -337,7 +333,7 @@ export default function HomePage() {
                       className="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md hover:shadow-lg transition-all"
                     >
                       <span className="material-symbols-outlined text-[18px]">chat</span>
-                      <span>Demander ce produit sur WhatsApp</span>
+                      <span>Commander sur WhatsApp</span>
                     </a>
                   </div>
                 </div>
@@ -348,7 +344,7 @@ export default function HomePage() {
       </section>
 
       {/* ==========================================
-          4. SECTION 5 UNIVERS DE PRODUITS PRATIQUES
+          4. SECTION 6 UNIVERS DE SOURCING (PHOTOS RÉELLES)
           ========================================== */}
       <section className="w-full py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-12">
@@ -357,20 +353,20 @@ export default function HomePage() {
               Filières de Sourcing
             </span>
             <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900">
-              Nos pôles de produits les plus demandés.
+              Nos 6 pôles de produits les plus demandés.
             </h2>
             <p className="text-sm sm:text-base text-slate-600 mt-2 leading-relaxed">
-              Des univers marchands choisis pour leur forte demande au Cameroun, en Côte d&apos;Ivoire, au Sénégal, en RDC et partout en Afrique.
+              Des univers marchands choisis pour leur forte rentabilité au Cameroun, en Côte d&apos;Ivoire, au Sénégal, en RDC et partout en Afrique.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* 1. Véhicules Milieu de Gamme */}
+            {/* 1. Véhicules Importation */}
             <div className="group relative bg-slate-50 rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
               <div className="relative h-56 overflow-hidden">
                 <img
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  src="/images/toyota.jfif"
+                  src="/images/landrover-evoque-2023.jpg"
                   alt="Véhicules Importation"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
@@ -381,10 +377,41 @@ export default function HomePage() {
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
                   <h3 className="text-lg font-bold text-slate-900 group-hover:text-red-600 transition-colors">
-                    Véhicules de Référence
+                    Véhicules de Référence &amp; SUV
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
-                    Toyota Corolla, BMW berlines, Lexus RX, et Mercedes-Benz. Motorisations fiables, pièces faciles à trouver et expédition maritime sécurisée.
+                    Range Rover Evoque 2023, Nissan Kicks 2019 garanti 18 mois, Toyota Yaris et Lexus RX. Contrôle technique, transport maritime sécurisé et dédouanement assisté.
+                  </p>
+                </div>
+                <div className="pt-4 mt-2 border-t border-slate-200/60">
+                  <Link href="/catalogue" className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-red-600 hover:text-red-700">
+                    <span>Voir les véhicules</span>
+                    <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* 2. Téléphonie & Informatique */}
+            <div className="group relative bg-slate-50 rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+              <div className="relative h-56 overflow-hidden">
+                <img
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  src="/images/smartphones-iphone-palettes.jpg"
+                  alt="Téléphonie & Informatique"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+                <span className="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur-md rounded-full text-xs font-bold text-slate-900 uppercase">
+                  Shenzhen • Dubaï
+                </span>
+              </div>
+              <div className="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <h3 className="text-lg font-bold text-slate-900 group-hover:text-red-600 transition-colors">
+                    Téléphonie &amp; PC Portables
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+                    Palettes d&apos;iPhones 13/14/15 Pro scellés, Samsung Galaxy Ultra 5G et arrivages massifs de PC portables HP EliteBook Core i5 pour boutiques et revendeurs.
                   </p>
                 </div>
                 <div className="pt-4 mt-2 border-t border-slate-200/60">
@@ -396,26 +423,26 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* 2. Électroménager */}
+            {/* 3. Perruques & Mèches Humaines */}
             <div className="group relative bg-slate-50 rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
               <div className="relative h-56 overflow-hidden">
                 <img
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=800&q=80"
-                  alt="Électroménager & TV"
+                  src="/images/perruque-lace-wig-lisse.jpg"
+                  alt="Perruques & Mèches Humaines"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
                 <span className="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur-md rounded-full text-xs font-bold text-slate-900 uppercase">
-                  Foshan • Yiwu
+                  Guangzhou • Xuchang
                 </span>
               </div>
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
                   <h3 className="text-lg font-bold text-slate-900 group-hover:text-red-600 transition-colors">
-                    Smart TV &amp; Froid Tropicalisé
+                    Perruques &amp; Cheveux Humains 12A
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
-                    Smart TV frameless 32&quot; à 55&quot;, congélateurs coffres basse consommation, ventilateurs solaires rechargeables et blenders inox.
+                    Lace Frontal Bone Straight, Body Wave ondulée châtain, Afro Kinky Curly et perruques bordeaux de cérémonie. Qualité 100% cheveux vierges pour salons de beauté.
                   </p>
                 </div>
                 <div className="pt-4 mt-2 border-t border-slate-200/60">
@@ -427,26 +454,26 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* 3. Ameublement */}
+            {/* 4. Mode & Confection */}
             <div className="group relative bg-slate-50 rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
               <div className="relative h-56 overflow-hidden">
                 <img
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80"
-                  alt="Maison & Mobilier Istanbul"
+                  src="/images/costumes-hommes-turquie.jpg"
+                  alt="Mode & Confection"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
                 <span className="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur-md rounded-full text-xs font-bold text-slate-900 uppercase">
-                  Turquie (Istanbul)
+                  Istanbul • Merter
                 </span>
               </div>
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
                   <h3 className="text-lg font-bold text-slate-900 group-hover:text-red-600 transition-colors">
-                    Salons, Tapis &amp; Literie Turque
+                    Costumes Turcs, Robes &amp; Abayas
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
-                    Salons d&apos;angle en velours antitache lavable, tapis de salon d&apos;Istanbul, lits avec coffres hydrauliques et rideaux thermiques.
+                    Costumes hommes croisés sur cintres, robes de soirée satin cocktail, abayas perlées d&apos;Istanbul, chemises italiennes et grenouillères pour enfants.
                   </p>
                 </div>
                 <div className="pt-4 mt-2 border-t border-slate-200/60">
@@ -458,26 +485,26 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* 4. Mode & Textiles */}
+            {/* 5. Chaussures & Baskets */}
             <div className="group relative bg-slate-50 rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
               <div className="relative h-56 overflow-hidden">
                 <img
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80"
-                  alt="Mode & Robes Istanbul"
+                  src="/images/baskets-jordan-streetwear.jpg"
+                  alt="Chaussures & Baskets"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
                 <span className="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur-md rounded-full text-xs font-bold text-slate-900 uppercase">
-                  Merter &amp; Osmanbey
+                  Putian • Istanbul
                 </span>
               </div>
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
                   <h3 className="text-lg font-bold text-slate-900 group-hover:text-red-600 transition-colors">
-                    Mode Féminine, Caftans &amp; Hommes
+                    Baskets Streetwear &amp; Chaussures Ville
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
-                    Robes de soirée et caftans brodés d&apos;Istanbul, costumes infroissables, sacs à main et sneakers à forte rotation commerciale.
+                    Cartons complets de baskets Jordan montantes avec boîtes, derbies de ville en cuir, claquettes de luxe homme, escarpins vernis et lots enfants.
                   </p>
                 </div>
                 <div className="pt-4 mt-2 border-t border-slate-200/60">
@@ -489,57 +516,26 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* 5. Machines & Solaire */}
+            {/* 6. Énergie, Friperie & Usines */}
             <div className="group relative bg-slate-50 rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
               <div className="relative h-56 overflow-hidden">
                 <img
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  src="https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?auto=format&fit=crop&w=800&q=80"
-                  alt="Machines & Énergie Solaire"
+                  src="/images/generator-inverter-silencieux.jpg"
+                  alt="Énergie, Friperie & Usines"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
                 <span className="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur-md rounded-full text-xs font-bold text-slate-900 uppercase">
-                  Artisanat &amp; Énergie
+                  Chine • Turquie
                 </span>
               </div>
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
                   <h3 className="text-lg font-bold text-slate-900 group-hover:text-red-600 transition-colors">
-                    Machines d&apos;Atelier &amp; Kits Solaires
+                    Générateurs Inverter &amp; Friperie
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
-                    Machines à coudre industrielles automatiques, kits solaires autonomes plug-and-play et outillage électroportatif de chantier.
-                  </p>
-                </div>
-                <div className="pt-4 mt-2 border-t border-slate-200/60">
-                  <Link href="/catalogue" className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-red-600 hover:text-red-700">
-                    <span>Explorer la catégorie</span>
-                    <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* 6. Informatique & Téléphonie */}
-            <div className="group relative bg-slate-50 rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
-              <div className="relative h-56 overflow-hidden">
-                <img
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=800&q=80"
-                  alt="PC Portables & Informatique"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
-                <span className="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur-md rounded-full text-xs font-bold text-slate-900 uppercase">
-                  Dubaï • Shenzhen
-                </span>
-              </div>
-              <div className="p-6 flex-1 flex flex-col justify-between">
-                <div>
-                  <h3 className="text-lg font-bold text-slate-900 group-hover:text-red-600 transition-colors">
-                    PC Portables &amp; Informatique
-                  </h3>
-                  <p className="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
-                    Ordinateurs portables 15.6&quot; Core i5 pour bureaux et étudiants, smartphones Android 5G scellés d&apos;usine et matériel bureautique.
+                    Groupes électrogènes inverters silencieux bi-carburant (essence/gaz) et conteneurs complets de balles de friperie de premier choix triées sans déchet.
                   </p>
                 </div>
                 <div className="pt-4 mt-2 border-t border-slate-200/60">
@@ -587,7 +583,7 @@ export default function HomePage() {
               <div className="w-16 h-16 rounded-2xl bg-white text-blue-600 flex items-center justify-center shrink-0 shadow-lg">
                 <svg className="w-10 h-10 fill-current" viewBox="0 0 24 24">
                   <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                </svg>
+              </svg>
               </div>
               <div className="space-y-1">
                 <h3 className="text-xl sm:text-2xl font-black text-white">
@@ -728,19 +724,19 @@ export default function HomePage() {
               },
               {
                 q: "2. Quels types de marchandises pouvez-vous commander ?",
-                a: "Notre champ d'action couvre les véhicules de référence (Toyota, BMW, Lexus, Mercedes), les smartphones et accessoires, l'électroménager (Smart TV, congélateurs, ventilateurs solaires), les salons et tapis turcs, le prêt-à-porter (robes de soirée, caftans, costumes) et les machines d'atelier."
+                a: "Notre catalogue comprend les véhicules (Land Rover Evoque, Nissan Kicks garanti 18 mois, Toyota Yaris), la téléphonie (palettes d'iPhones, Samsung Ultra, PC portables HP EliteBook), les perruques en cheveux humains vierges 12A, la mode turque (costumes croisés, robes de soirée, abayas), les baskets streetwear, les groupes électrogènes inverters et les balles de friperie triée."
               },
               {
                 q: "3. Comment passer une commande et quel est le délai moyen ?",
-                a: "Il vous suffit de nous contacter via WhatsApp avec la photo ou fiche technique du produit recherché. Les délais sont de 5 à 8 jours ouvrés en Air Cargo Express et de 25 à 35 jours en fret maritime conteneurisé."
+                a: "Il vous suffit de nous contacter via WhatsApp avec la photo ou référence du produit recherché. Les délais sont de 4 à 6 jours ouvrés en Air Cargo Express et de 25 à 35 jours en fret maritime conteneurisé."
               },
               {
                 q: "4. Pourquoi un acompte est-il nécessaire ?",
                 a: "L'acompte permet d'engager la commande ferme auprès du fabricant en Chine, Turquie ou Dubaï, et de lancer la préparation et l'emballage sécurisé. Le solde est validé après réception de la vidéo d'inspection de vos colis."
               },
               {
-                q: "5. Comment suivre ma cargaison en temps réel ?",
-                a: "Dès remise au transitaire aérien ou maritime, un numéro de suivi (LTA / Waybill ou connaissement maritime) vous est remis. Vous pouvez également consulter notre portail de suivi en ligne ou échanger avec notre service client WhatsApp."
+                q: "5. Comment obtenir un devis clé en main avec transport ?",
+                a: "Cliquez sur n'importe quel bouton WhatsApp du site pour échanger directement avec M. Fogeng Marius. Vous recevrez une cotation détaillée incluant le coût de la marchandise, le fret aérien ou maritime et les formalités de transit vers votre port africain."
               }
             ].map((faq, index) => {
               const isOpen = openFaq === index;

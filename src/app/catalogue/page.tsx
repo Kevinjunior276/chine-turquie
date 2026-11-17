@@ -42,7 +42,7 @@ export default function CataloguePage() {
         <div 
           className="absolute inset-0 bg-cover bg-center mix-blend-overlay opacity-25 scale-105"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1570710891163-6d3b5c47248b?auto=format&fit=crop&w=1600&q=80')"
+            backgroundImage: "url('/images/entrepot-hangar-logistique.jpg')"
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/90 to-slate-950" />

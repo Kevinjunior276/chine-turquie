@@ -61,40 +61,28 @@ export default function Navbar() {
           })}
         </nav>
 
-        {/* Right Actions: Desktop has Facebook + Community, Mobile has WhatsApp icon + Prominent Hamburger */}
+        {/* Right Actions: Desktop has WhatsApp Community (prominent), Mobile has WhatsApp icon + Hamburger */}
         <div className="flex items-center gap-2.5 sm:gap-3 shrink-0">
-          {/* Desktop Facebook Button */}
-          <a
-            href={CONTACT_INFO.facebookUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Page Facebook Officielle"
-            className="hidden sm:flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-blue-50 hover:bg-blue-100 text-blue-700 border border-blue-200/80 transition-all font-bold text-xs"
-          >
-            <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-            </svg>
-            <span className="hidden md:inline">Facebook</span>
-          </a>
 
-          {/* Desktop WhatsApp Community Button */}
+          {/* Desktop WhatsApp Community Button — PRINCIPAL & VISIBLE */}
           <a
-            className="hidden sm:inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-4 py-2.5 rounded-xl transition-all text-xs sm:text-sm font-extrabold shadow-md shadow-red-600/25"
+            className="hidden sm:inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-xl transition-all text-xs sm:text-sm font-extrabold shadow-lg shadow-emerald-600/30 animate-pulse-emerald"
             href={CONTACT_INFO.whatsappGroupLink}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-300" />
+            <span className="relative flex h-2.5 w-2.5">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75" />
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-white" />
             </span>
-            <span className="material-symbols-outlined text-[18px]">forum</span>
-            <span className="hidden xl:inline">Communauté WhatsApp</span>
+            <span className="material-symbols-outlined text-[18px]">groups</span>
+            <span className="hidden lg:inline">Rejoindre notre Communauté</span>
+            <span className="lg:hidden">Communauté</span>
           </a>
 
           {/* Mobile Quick WhatsApp Icon */}
           <a
-            href={CONTACT_INFO.getWhatsappUrl()}
+            href={CONTACT_INFO.whatsappGroupLink}
             target="_blank"
             rel="noopener noreferrer"
             className="sm:hidden w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center shadow-md active:scale-95 transition-transform"
@@ -148,26 +136,31 @@ export default function Navbar() {
           </div>
 
           <div className="pt-4 border-t border-slate-100 flex flex-col gap-3">
+            {/* Mobile menu: WhatsApp Community as MAIN button */}
+            <a
+              href={CONTACT_INFO.whatsappGroupLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2.5 py-3.5 px-4 rounded-xl bg-emerald-600 text-white text-sm font-extrabold shadow-lg animate-pulse-emerald"
+            >
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75" />
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-white" />
+              </span>
+              <span className="material-symbols-outlined text-[20px]">groups</span>
+              <span>Rejoindre notre Communauté WhatsApp</span>
+            </a>
+
             <a
               href={CONTACT_INFO.facebookUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2.5 py-3.5 px-4 rounded-xl bg-blue-50 text-blue-700 text-sm font-bold border border-blue-200"
+              className="flex items-center justify-center gap-2.5 py-3 px-4 rounded-xl bg-blue-50 text-blue-700 text-sm font-bold border border-blue-200"
             >
               <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
                 <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
               </svg>
               <span>Suivre notre page Facebook</span>
-            </a>
-
-            <a
-              href={CONTACT_INFO.whatsappGroupLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2.5 py-3.5 px-4 rounded-xl bg-emerald-600 text-white text-sm font-extrabold shadow-md"
-            >
-              <span className="material-symbols-outlined text-[20px]">groups</span>
-              <span>Intégrer le Groupe WhatsApp</span>
             </a>
 
             <div className="p-3.5 bg-slate-50 rounded-xl flex items-center justify-between border border-slate-100">
