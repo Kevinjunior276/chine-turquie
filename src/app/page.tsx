@@ -576,35 +576,51 @@ export default function HomePage() {
       {/* ==========================================
           6. BANNIÈRE OFFICIELLE COMMUNAUTÉ WHATSAPP (JUSTE APRÈS TÉMOIGNAGES)
           ========================================== */}
-      <section className="w-full py-16 bg-gradient-to-r from-emerald-950 via-emerald-900 to-teal-950 text-white relative overflow-hidden border-y border-emerald-800/40">
+      <section className="w-full py-16 bg-gradient-to-br from-emerald-600 via-teal-700 to-emerald-900 text-white relative overflow-hidden shadow-2xl">
         {/* Glows d'arrière-plan */}
-        <div className="absolute -top-24 -left-24 w-80 h-80 bg-emerald-500/20 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute -bottom-24 -right-24 w-80 h-80 bg-teal-500/20 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -top-24 -left-24 w-80 h-80 bg-white/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-24 -right-24 w-80 h-80 bg-emerald-400/20 rounded-full blur-3xl pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-8 bg-white/10 backdrop-blur-xl border border-white/20 p-8 sm:p-12 rounded-3xl shadow-2xl">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-8 bg-white/10 backdrop-blur-xl border border-white/25 p-8 sm:p-12 rounded-3xl shadow-2xl">
             <div className="flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
               <div className="relative shrink-0">
-                <div className="w-20 h-20 rounded-2xl bg-gradient-to-tr from-emerald-600 to-teal-500 flex items-center justify-center text-white shadow-xl shadow-emerald-900/40 ring-4 ring-white/20">
-                  <span className="material-symbols-outlined text-[44px]">groups</span>
+                <div className="w-20 h-20 rounded-2xl bg-white text-emerald-700 flex items-center justify-center shadow-2xl ring-4 ring-white/30">
+                  <svg className="w-10 h-10 fill-current" viewBox="0 0 24 24">
+                    <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                  </svg>
                 </div>
                 <span className="absolute -top-1.5 -right-1.5 flex h-4 w-4">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-80" />
-                  <span className="relative inline-flex rounded-full h-4 w-4 bg-emerald-300 ring-2 ring-emerald-950" />
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-300 opacity-80" />
+                  <span className="relative inline-flex rounded-full h-4 w-4 bg-emerald-400 ring-2 ring-white" />
                 </span>
               </div>
 
-              <div className="space-y-2">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 border border-emerald-400/30 text-emerald-300 text-xs font-bold uppercase tracking-wider">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                  <span>Communauté Ouverte · Plus de 3 500 Acheteurs &amp; Commerçants</span>
+              <div className="space-y-3">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 border border-white/30 text-white text-xs font-bold uppercase tracking-wider">
+                  <span className="w-2 h-2 rounded-full bg-emerald-300 animate-pulse" />
+                  <span>Communauté Officielle · +3 500 Importateurs &amp; Commerçants</span>
                 </div>
-                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
-                  Rejoignez notre Communauté WhatsApp Officielle
+                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-tight">
+                  Rejoignez notre Communauté WhatsApp 🚀
                 </h3>
-                <p className="text-emerald-100/90 text-sm sm:text-base max-w-xl leading-relaxed">
-                  Accédez en temps réel aux vidéos directes des usines de Chine, Turquie et Dubaï, aux arrivages conteneurs hebdomadaires et aux opportunités de groupage exclusives.
+                <p className="text-emerald-50 text-sm sm:text-base max-w-xl leading-relaxed font-medium">
+                  Accédez aux vidéos directes des usines de Chine, Turquie et Dubaï, aux arrivages hebdomadaires et aux opportunités de groupage pour maximiser vos marges en Afrique.
                 </p>
+                <div className="flex flex-wrap items-center gap-4 pt-1 text-xs text-white/90 font-semibold">
+                  <span className="flex items-center gap-1.5">
+                    <svg className="w-4 h-4 fill-emerald-300 shrink-0" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
+                    100% Gratuit &amp; Ouvert
+                  </span>
+                  <span className="flex items-center gap-1.5">
+                    <svg className="w-4 h-4 fill-emerald-300 shrink-0" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
+                    Vidéos directes d&apos;usines
+                  </span>
+                  <span className="flex items-center gap-1.5">
+                    <svg className="w-4 h-4 fill-emerald-300 shrink-0" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
+                    Groupages maritimes &amp; aériens
+                  </span>
+                </div>
               </div>
             </div>
 
@@ -613,10 +629,12 @@ export default function HomePage() {
                 href={CONTACT_INFO.whatsappGroupLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-5 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-white font-black text-base shadow-xl shadow-emerald-950/50 hover:scale-105 active:scale-95 transition-all text-center"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-5 rounded-2xl bg-white text-emerald-900 hover:bg-emerald-50 font-black text-base shadow-2xl hover:scale-105 active:scale-95 transition-all text-center"
               >
-                <span className="material-symbols-outlined text-[24px]">forum</span>
-                <span>Rejoindre la Communauté WhatsApp</span>
+                <svg className="w-6 h-6 fill-emerald-700 shrink-0" viewBox="0 0 24 24">
+                  <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                </svg>
+                <span>Rejoindre la Communauté</span>
                 <span className="material-symbols-outlined text-[20px]">arrow_forward</span>
               </a>
 
@@ -624,7 +642,7 @@ export default function HomePage() {
                 href={CONTACT_INFO.facebookUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-5 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-sm transition-all"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-5 rounded-2xl bg-white/15 hover:bg-white/25 border border-white/25 text-white font-bold text-sm transition-all"
                 title="Notre page Facebook"
               >
                 <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
