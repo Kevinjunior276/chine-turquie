@@ -785,7 +785,7 @@ export default function HomePage() {
               },
               {
                 q: "2. Quels types de marchandises pouvez-vous commander ?",
-                a: "Notre catalogue comprend les véhicules (Land Rover Evoque, Nissan Kicks garanti 18 mois, Toyota Yaris), la téléphonie (palettes d'iPhones, Samsung Ultra, PC portables HP EliteBook), les perruques en cheveux humains vierges 12A, la mode turque (costumes croisés, robes de soirée, abayas), les baskets streetwear, les groupes électrogènes inverters et les balles de friperie triée."
+                a: "Notre catalogue comprend les véhicules (Land Rover Evoque, Nissan Kicks garanti 18 mois, Toyota Yaris), les ballots (ballots de friperie triée de premier choix, vêtements, chaussures et sacs en ballots scellés), la téléphonie (palettes d'iPhones, Samsung Ultra, PC portables HP EliteBook), les perruques en cheveux humains vierges 12A, la mode turque (costumes croisés, robes de soirée, abayas), les baskets streetwear, les groupes électrogènes inverters et toute marchandise spécifique sur demande."
               },
               {
                 q: "3. Comment passer une commande et quel est le délai moyen ?",
